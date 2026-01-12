@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1:16]","start":1768244677525,"end":1768244684846,"title":"features\/books\/books[1:16] 16:04:37.525-16:04:44.846 Create a new book using ISBN do primeiro livro existente"},{"id":2,"group":2,"content":"features\/books\/books[2:37]","start":1768244677525,"end":1768244684442,"title":"features\/books\/books[2:37] 16:04:37.525-16:04:44.442 List book by ISBN"},{"id":3,"group":3,"content":"features\/books\/books[3:56]","start":1768244677526,"end":1768244685335,"title":"features\/books\/books[3:56] 16:04:37.526-16:04:45.335 Update existing book"},{"id":4,"group":4,"content":"features\/books\/books[4:78]","start":1768244677526,"end":1768244683875,"title":"features\/books\/books[4:78] 16:04:37.526-16:04:43.875 List all books"},{"id":5,"group":5,"content":"features\/books\/books[5:87]","start":1768244677525,"end":1768244683848,"title":"features\/books\/books[5:87] 16:04:37.525-16:04:43.848 List invalid ISBN book"},{"id":6,"group":5,"content":"features\/books\/books[6:99]","start":1768244683857,"end":1768244684473,"title":"features\/books\/books[6:99] 16:04:43.857-16:04:44.473 Create a new book with invalid userId"},{"id":7,"group":4,"content":"features\/users\/generate-token[1:7]","start":1768244683884,"end":1768244687941,"title":"features\/users\/generate-token[1:7] 16:04:43.884-16:04:47.941 Create user and generate token"},{"id":8,"group":2,"content":"features\/users\/users[1:13]","start":1768244684453,"end":1768244687704,"title":"features\/users\/users[1:13] 16:04:44.453-16:04:47.704 Create Fails user"},{"id":9,"group":5,"content":"features\/users\/users[2:24]","start":1768244684480,"end":1768244688198,"title":"features\/users\/users[2:24] 16:04:44.480-16:04:48.198 Delete user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3054873d-2085-4d10-a946-039526718eb6",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.books.books</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-12 04:13:03 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:16]"><span>[1:16]</span> <span>Create a new book using ISBN do primeiro livro existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:37]"><span>[2:37]</span> <span>List book by ISBN</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:56]"><span>[3:56]</span> <span>Update existing book</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:78]"><span>[4:78]</span> <span>List all books</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:87]"><span>[5:87]</span> <span>List invalid ISBN book</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:99]"><span>[6:99]</span> <span>Create a new book with invalid userId</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/books/books.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Books</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:16]</span>
+                <span class="scenario-name">Create a new book using ISBN do primeiro livro existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5569</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:57.088 karate.env system property was: null 
+16:12:57.503 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4001</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:13:01.681 this thread waited 3980 milliseconds for callonce lock: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:01.712 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:01.712 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">560</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">16:13:01.712 request:
+1 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Books
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.273 response time in milliseconds: 557
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4514
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Total de livros disponíveis:&#39;, response.books.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">16:13:02.295 [print] Total de livros disponíveis: 8 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def firstISBN = response.books[0].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyFile = {&#39;userId&#39;: &#39;#(userID)&#39;, &quot;collectionOfIsbns&quot;: [{&quot;isbn&quot;: &#39;#(firstISBN)&#39;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyFile</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">945</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">16:13:02.313 request:
+2 &gt; POST https://bookstore.toolsqa.com/BookStore/v1/Books
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+2 &gt; cache-control: no-cache
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 96
+2 &gt; Host: bookstore.toolsqa.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;userId&quot;:&quot;8a267225-8a5a-4412-9c85-566d7df75137&quot;,&quot;collectionOfIsbns&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;}]}
+
+16:13:03.252 response time in milliseconds: 935
+2 &lt; 201
+2 &lt; Server: nginx/1.17.10 (Ubuntu)
+2 &lt; Date: Mon, 12 Jan 2026 19:13:04 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 36
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;24-2U7DK3nFgERO/LjA8mW3SiqYyFc&quot;
+{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:37]</span>
+                <span class="scenario-name">List book by ISBN</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5174</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:57.086 karate.env system property was: null 
+16:12:57.507 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4051</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:13:01.696 this thread waited 4024 milliseconds for callonce lock: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:01.712 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:01.712 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">543</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">16:13:01.712 request:
+1 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Books
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.257 response time in milliseconds: 535
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4514
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def firstISBN = response.books[0].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/Book&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ISBN = firstISBN</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">517</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">16:13:02.301 request:
+2 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Book?ISBN=9781449325862
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+2 &gt; cache-control: no-cache
+2 &gt; Content-Type: application/json
+2 &gt; Host: bookstore.toolsqa.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.815 response time in milliseconds: 512
+2 &lt; 200
+2 &lt; Server: nginx/1.17.10 (Ubuntu)
+2 &lt; Date: Mon, 12 Jan 2026 19:13:04 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 549
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;225-6wegpsdSbs3Zjpo/5fzJQey1dRQ&quot;
+{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:56]</span>
+                <span class="scenario-name">Update existing book</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6203</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:57.093 karate.env system property was: null 
+16:12:57.540 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4058</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:13:01.696 this thread waited 4024 milliseconds for callonce lock: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:01.712 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:01.712 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">560</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">16:13:01.712 request:
+1 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Books
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.280 response time in milliseconds: 559
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4514
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def firstISBN = response.books[0].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def secondIsbn = response.books[1].isbn</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/Books&#39;, firstISBN</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { userId: &quot;#(userID)&quot;, isbn: &quot;#(secondIsbn)&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1495</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.73">16:13:02.354 request:
+2 &gt; PUT https://bookstore.toolsqa.com/BookStore/v1/Books/9781449325862
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+2 &gt; cache-control: no-cache
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 72
+2 &gt; Host: bookstore.toolsqa.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;userId&quot;:&quot;8a267225-8a5a-4412-9c85-566d7df75137&quot;,&quot;isbn&quot;:&quot;9781449331818&quot;}
+
+16:13:03.845 response time in milliseconds: 1490
+2 &lt; 200
+2 &lt; Server: nginx/1.17.10 (Ubuntu)
+2 &lt; Date: Mon, 12 Jan 2026 19:13:05 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 670
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;29e-4pXYRcIlhhXAwHpIq8jXtgrj+dI&quot;
+{&quot;userId&quot;:&quot;8a267225-8a5a-4412-9c85-566d7df75137&quot;,&quot;username&quot;:&quot;user_87838aa8&quot;,&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:78]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:78]</span>
+                <span class="scenario-name">List all books</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4625</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:78]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:57.091 karate.env system property was: null 
+16:12:57.502 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4040</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:13:01.681 this thread waited 4009 milliseconds for callonce lock: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:01.696 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:01.696 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">552</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.82">16:13:01.712 request:
+1 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Books
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.261 response time in milliseconds: 537
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4514
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:87]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:87]</span>
+                <span class="scenario-name">List invalid ISBN book</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4590</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:87]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:57.085 karate.env system property was: null 
+16:12:57.507 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4047</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:13:01.681 &lt;&lt; lock released, cached callonce: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.users.generate-token</div>
+      </div>
+      <div class="time-cell passed">4001</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">16:12:57.672 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:features/users/generate-token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def random = java.util.UUID.randomUUID().toString()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">283</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userName = &#39;user_&#39; + random.substring(0,8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">95</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def password = &#39;Test@12345&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;Account/v1/User&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { userName: &quot;#(userName)&quot;, password: &quot;#(password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2403</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.15">16:12:58.713 request:
+1 &gt; POST https://bookstore.toolsqa.com/Account/v1/User
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;user_87838aa8&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
+
+16:13:00.479 response time in milliseconds: 1759
+1 &lt; 201
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 87
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;57-NlIsXmdReIsa4og92Ea4+y1FZkA&quot;
+{&quot;userID&quot;:&quot;8a267225-8a5a-4412-9c85-566d7df75137&quot;,&quot;username&quot;:&quot;user_87838aa8&quot;,&quot;books&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = response.userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserId criado:&#39;, userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.18">16:13:00.497 [print] UserId criado: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.set(&#39;userId&#39;, userId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;Account/v1/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.24">
+      <div class="step-ref bg-step">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { userName: &quot;#(userName)&quot;, password: &quot;#(password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1174</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.25">16:13:00.513 request:
+2 &gt; POST https://bookstore.toolsqa.com/Account/v1/GenerateToken
+2 &gt; cache-control: no-cache
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 52
+2 &gt; Host: bookstore.toolsqa.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;user_87838aa8&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
+
+16:13:01.681 response time in milliseconds: 1168
+2 &lt; 200
+2 &lt; Server: nginx/1.17.10 (Ubuntu)
+2 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 282
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;11a-l3QHcATGUcuuagzUD4UYNdrWWwY&quot;
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4&quot;,&quot;expires&quot;:&quot;2026-01-19T19:13:02.644Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.26">
+      <div class="step-ref bg-step">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.27">
+      <div class="step-ref bg-step">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.set(&#39;token&#39;, response.token)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.28">
+      <div class="step-ref bg-step">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Generated token:&#39;, response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.28">16:13:01.681 [print] Generated token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:01.696 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:87]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:01.696 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def invalidIsbn = &#39;3782n39n93&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Book&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ISBN = invalidIsbn</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">524</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">16:13:01.696 request:
+1 &gt; GET https://bookstore.toolsqa.com/BookStore/v1/Book?ISBN=3782n39n93
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:13:02.228 response time in milliseconds: 530
+1 &lt; 400
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;4f-RpKuEeQ3Bj2uvDIxIXvc7QRyqm4&quot;
+{&quot;code&quot;:&quot;1205&quot;,&quot;message&quot;:&quot;ISBN supplied is not available in Books Collection!&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:99]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:99]</span>
+                <span class="scenario-name">Create a new book with invalid userId</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>640</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:99]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Base URL e basePath</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:13:02.249 karate.env system property was: null 
+16:13:02.254 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;BookStore/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chama create-user + generate-token apenas uma vez</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = callonce read(&#39;classpath:features/users/generate-token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = auth.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = auth.userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Token:&#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:13:02.342 [print] Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;UserID:&#39;, userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:13:02.343 [print] UserID: 8a267225-8a5a-4412-9c85-566d7df75137 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def invalidUserId = &#39;abc&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def invalidIsbn = &#39;9xc862&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path basePath + &#39;/Books&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {userId: &#39;#(invalidUserId)&#39;, collectionOfIsbns:[{isbn:&quot;#(invalidIsbn)&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">556</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.107">16:13:02.356 request:
+1 &gt; POST https://bookstore.toolsqa.com/BookStore/v1/Books
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfODc4MzhhYTgiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDUxODJ9.fnNqNdIYFRh5KGIth6q_DFc2pW8PG-bzCH_WXBTFOo4
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userId&quot;:&quot;abc&quot;,&quot;collectionOfIsbns&quot;:[{&quot;isbn&quot;:&quot;9xc862&quot;}]}
+
+16:13:02.906 response time in milliseconds: 547
+1 &lt; 401
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Mon, 12 Jan 2026 19:13:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 48
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;30-zoAnprTpYK9HmHYlpHOx6U+Br2A&quot;
+{&quot;code&quot;:&quot;1207&quot;,&quot;message&quot;:&quot;User Id not correct!&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
