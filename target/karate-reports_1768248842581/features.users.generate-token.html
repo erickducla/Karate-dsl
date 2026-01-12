@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-12 05:22:03 PM</div>
+    <div>2026-01-12 04:46:09 PM</div>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3354</span>
+              <span>ms:</span>&nbsp;<span>4773</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,7 +104,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def baseUrl = &#39;https://bookstore.toolsqa.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -113,8 +113,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">17:21:55.563 karate.env system property was: null 
-17:21:55.566 karate.env system property was: qa 
+  <div class="preformatted" data-parent="0.4">16:46:00.789 karate.env system property was: null 
+16:46:00.789 karate.env system property was: qa 
 </div>   
 
   
@@ -302,7 +302,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2071</div>
+    <div class="time-cell passed">3048</div>
   </div>
 
    
@@ -311,7 +311,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.15">17:21:55.584 request:
+  <div class="preformatted" data-parent="0.15">16:46:00.800 request:
 1 &gt; POST https://bookstore.toolsqa.com/Account/v1/User
 1 &gt; cache-control: no-cache
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -320,18 +320,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;userName&quot;:&quot;user_0ac9c82e&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
+{&quot;userName&quot;:&quot;user_bbf8e7b5&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
 
-17:21:57.651 response time in milliseconds: 2064
+16:46:03.851 response time in milliseconds: 3051
 1 &lt; 201
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 20:21:59 GMT
+1 &lt; Date: Mon, 12 Jan 2026 19:46:05 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 87
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
-1 &lt; ETag: W/&quot;57-3AglIYao/5DklnInlAnM9wRGAIM&quot;
-{&quot;userID&quot;:&quot;c6018e5e-cea2-4b54-969e-faaa76dff917&quot;,&quot;username&quot;:&quot;user_0ac9c82e&quot;,&quot;books&quot;:[]}
+1 &lt; ETag: W/&quot;57-EmA+H4m1gcq4Xu3q/oDGoAo774A&quot;
+{&quot;userID&quot;:&quot;53f7edb7-49f0-4655-8561-752236dd66f1&quot;,&quot;username&quot;:&quot;user_bbf8e7b5&quot;,&quot;books&quot;:[]}
 
 </div>   
 
@@ -380,7 +380,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def userId = response.userID</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -405,10 +405,39 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>karate.set(&#39;userId&#39;, userId)</span>
+        <span>*</span>&nbsp;<span>print &#39;UserId criado:&#39;, userId</span>
       </div>
     </div>
     <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">16:46:03.851 [print] UserId criado: 53f7edb7-49f0-4655-8561-752236dd66f1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.set(&#39;userId&#39;, userId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -429,8 +458,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url baseUrl</span>
@@ -457,39 +486,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;Account/v1/GenerateToken&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.23">
       <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { userName: &quot;#(userName)&quot;, password: &quot;#(password)&quot;}</span>
+        <span>And</span>&nbsp;<span>path &#39;Account/v1/GenerateToken&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -517,10 +518,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+        <span>And</span>&nbsp;<span>request { userName: &quot;#(userName)&quot;, password: &quot;#(password)&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1263</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -529,29 +530,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.24">17:21:57.663 request:
-2 &gt; POST https://bookstore.toolsqa.com/Account/v1/GenerateToken
-2 &gt; cache-control: no-cache
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 52
-2 &gt; Host: bookstore.toolsqa.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;userName&quot;:&quot;user_0ac9c82e&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
-
-17:21:58.922 response time in milliseconds: 1248
-2 &lt; 200
-2 &lt; Server: nginx/1.17.10 (Ubuntu)
-2 &lt; Date: Mon, 12 Jan 2026 20:22:00 GMT
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 282
-2 &lt; Connection: keep-alive
-2 &lt; X-Powered-By: Express
-2 &lt; ETag: W/&quot;11a-xubpeWa3BMiuJTSeTsnfMKOrvV0&quot;
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfMGFjOWM4MmUiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDkzMTl9.I_iWdsOfGVRYzsEHhF2pybrug1XhZfFsPIaXMxicPao&quot;,&quot;expires&quot;:&quot;2026-01-19T20:21:59.821Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}
-
-</div>   
+     
 
   
 
@@ -565,6 +544,56 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.25">
       <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1704</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">16:46:03.851 request:
+2 &gt; POST https://bookstore.toolsqa.com/Account/v1/GenerateToken
+2 &gt; cache-control: no-cache
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 52
+2 &gt; Host: bookstore.toolsqa.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;user_bbf8e7b5&quot;,&quot;password&quot;:&quot;Test@12345&quot;}
+
+16:46:05.564 response time in milliseconds: 1711
+2 &lt; 200
+2 &lt; Server: nginx/1.17.10 (Ubuntu)
+2 &lt; Date: Mon, 12 Jan 2026 19:46:07 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 282
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;11a-UPFvquX5YNAeWrlafiCRy/+xqP8&quot;
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfYmJmOGU3YjUiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDcxNjV9.dEogOiDY3DlcNSCEgaiGjRImycpasblRWHnt1of70XE&quot;,&quot;expires&quot;:&quot;2026-01-19T19:46:05.992Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -591,8 +620,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>karate.set(&#39;token&#39;, response.token)</span>
@@ -608,6 +637,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
      
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Generated token:&#39;, response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">16:46:05.570 [print] Generated token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVzZXJfYmJmOGU3YjUiLCJwYXNzd29yZCI6IlRlc3RAMTIzNDUiLCJpYXQiOjE3NjgyNDcxNjV9.dEogOiDY3DlcNSCEgaiGjRImycpasblRWHnt1of70XE 
+</div>   
 
   
 

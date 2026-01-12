@@ -15,7 +15,6 @@ Feature: Generate user and token
              When method post
              Then status 201
                 * def userId = response.userID
-                * print 'UserId criado:', userId
                 * karate.set('userId', userId)
 
 
@@ -25,4 +24,3 @@ Feature: Generate user and token
              When method post
              Then status 200
                 * karate.set('token', response.token)
-                * print 'Generated token:', response.token

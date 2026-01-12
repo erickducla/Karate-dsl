@@ -18,11 +18,9 @@ Feature: Books
                 And path basePath + '/Books'
                 And header Authorization = 'Bearer ' + token
                 When method get
-                Then status 200
-               
+                Then status 200   
 
-                * def firstISBN = response.books[0].isbn
-                
+                * def firstISBN = response.books[0].isbn 
 
                 * def bodyFile = {'userId': '#(userID)', "collectionOfIsbns": [{"isbn": '#(firstISBN)'}]}
 
@@ -40,11 +38,9 @@ Feature: Books
                 And header Authorization = 'Bearer ' + token
                 When method get
                 Then status 200
-                
 
                 * def firstISBN = response.books[0].isbn
                 
-
                 Given path basePath + '/Book'
                 And param ISBN = firstISBN
                 And header Authorization = 'Bearer ' + token
@@ -60,12 +56,9 @@ Feature: Books
                 When method get
                 Then status 200
                 
-
                 * def firstISBN = response.books[0].isbn
                 
-
-                * def secondIsbn = response.books[1].isbn
-                
+                * def secondIsbn = response.books[1].isbn           
 
                 Given path basePath + '/Books', firstISBN
                 And header Authorization = 'Bearer ' + token
@@ -82,7 +75,6 @@ Feature: Books
                 When method get
                 Then status 200
                 
-
         @smoke
         Scenario: List invalid ISBN book
                 * def invalidIsbn = '3782n39n93'
@@ -94,7 +86,6 @@ Feature: Books
                 When method get
                 Then status 400
                 
-
         @smoke
         Scenario: Create a new book with invalid userId
                 * def invalidUserId = 'abc'
