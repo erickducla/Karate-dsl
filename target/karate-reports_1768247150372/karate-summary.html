@@ -9,8 +9,8 @@
     <script type="text/javascript" src="res/jquery.min.js"></script>
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
-    <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>Karate Tags Report</title>
+    <script type="text/javascript" src="res/karate-report.js"></script>    
+    <title>Karate Summary Report</title>
   </head>
   <body>
     <div id="root-container">
@@ -22,7 +22,7 @@
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">3</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,43 +30,60 @@
     <div></div>
   </div>
   <div id="nav-type">
-    <div>Tags</div>
+    <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-12 04:46:11 PM</div>
+    <div>2026-01-12 04:19:36 PM</div>
   </div>
 </div>
 
       </div>
       <div id="content">
         <div class="page-heading alert alert-primary">
-          <a href="karate-summary.html">Summary</a>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
         </div>
-        <table class="tags-table table table-sm ">
+        <table class="features-table table table-sm">
           <thead>
             <tr>
-              <th class="feature-cell">Feature</th>
-              <th classapend="passed">smoke</th>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
             </tr>
           </thead>
           <tbody>
             <tr class="passed">
-              <td class="feature-cell">
+              <td>
                 <a href="features.books.books.html">features/books/books.feature</a>
               </td>
-              <td classapend="passed">X</td>
+              <td>Books</td>
+              <td class="num">6</td>
+              <td class="num">0</td>
+              <td class="num">6</td>
+              <td class="num">28084</td>
             </tr>
             <tr class="passed">
-              <td class="feature-cell">
+              <td>
                 <a href="features.users.generate-token.html">features/users/generate-token.feature</a>
               </td>
-              <td classapend="passed">X</td>
+              <td>Generate user and token</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">4459</td>
             </tr>
             <tr class="passed">
-              <td class="feature-cell">
+              <td>
                 <a href="features.users.users.html">features/users/users.feature</a>
               </td>
-              <td classapend="passed">X</td>
+              <td>Users</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">7564</td>
             </tr>
           </tbody>
         </table>
