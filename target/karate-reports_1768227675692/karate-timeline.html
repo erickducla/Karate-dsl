@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1:15]","start":1768227470785,"end":1768227507535,"title":"features\/books\/books[1:15] 11:17:50.785-11:18:27.535 Create a new book","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[2:36]","start":1768227470795,"end":1768227476851,"title":"features\/books\/books[2:36] 11:17:50.795-11:17:56.851 List book by ISBN","className":"failed"},{"id":3,"group":3,"content":"features\/books\/books[3:47]","start":1768227470784,"end":1768227476851,"title":"features\/books\/books[3:47] 11:17:50.784-11:17:56.851 update new book","className":"failed"},{"id":4,"group":4,"content":"features\/users\/generate-token[1:7]","start":1768227470784,"end":1768227475599,"title":"features\/users\/generate-token[1:7] 11:17:50.784-11:17:55.599 Create user and generate token"},{"id":5,"group":5,"content":"features\/users\/usersData\/delete[1.1:20]","start":1768227470807,"end":1768227477346,"title":"features\/users\/usersData\/delete[1.1:20] 11:17:50.807-11:17:57.346 Delete user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

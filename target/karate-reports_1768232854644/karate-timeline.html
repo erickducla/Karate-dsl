@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1:16]","start":1768232700359,"end":1768232768483,"title":"features\/books\/books[1:16] 12:45:00.359-12:46:08.483 Create a new book using ISBN do primeiro livro existente","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[2:43]","start":1768232700359,"end":1768232707426,"title":"features\/books\/books[2:43] 12:45:00.359-12:45:07.426 List book by ISBN","className":"failed"},{"id":3,"group":3,"content":"features\/books\/books[3:53]","start":1768232700447,"end":1768232707460,"title":"features\/books\/books[3:53] 12:45:00.447-12:45:07.460 Update existing book","className":"failed"},{"id":4,"group":4,"content":"features\/books\/books[4:65]","start":1768232700368,"end":1768232707911,"title":"features\/books\/books[4:65] 12:45:00.368-12:45:07.911 List all books"},{"id":5,"group":5,"content":"features\/users\/generate-token[1:7]","start":1768232700359,"end":1768232706302,"title":"features\/users\/generate-token[1:7] 12:45:00.359-12:45:06.302 Create user and generate token"},{"id":6,"group":5,"content":"features\/users\/users[1:12]","start":1768232706313,"end":1768232709758,"title":"features\/users\/users[1:12] 12:45:06.313-12:45:09.758 Create Fails user"},{"id":7,"group":2,"content":"features\/users\/users[2:22]","start":1768232707443,"end":1768232710242,"title":"features\/users\/users[2:22] 12:45:07.443-12:45:10.242 Delete user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1.1:21]","start":1768165353753,"end":1768165355238,"title":"features\/books\/books[1.1:21] 18:02:33.753-18:02:35.238 List books success","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[1.1:25]","start":1768165353755,"end":1768165355218,"title":"features\/books\/books[1.1:25] 18:02:33.755-18:02:35.218 Create book","className":"failed"},{"id":3,"group":3,"content":"features\/users\/users[1.1:28]","start":1768165353752,"end":1768165361491,"title":"features\/users\/users[1.1:28] 18:02:33.752-18:02:41.491 Create user success"},{"id":4,"group":4,"content":"features\/users\/users[1.1:32]","start":1768165353788,"end":1768165361389,"title":"features\/users\/users[1.1:32] 18:02:33.788-18:02:41.389 Create duplicated user","className":"failed"},{"id":5,"group":5,"content":"features\/users\/users[1.1:36]","start":1768165353752,"end":1768165361561,"title":"features\/users\/users[1.1:36] 18:02:33.752-18:02:41.561 Generate user token"},{"id":6,"group":2,"content":"features\/users\/users[1.1:40]","start":1768165355268,"end":1768165362008,"title":"features\/users\/users[1.1:40] 18:02:35.268-18:02:42.008 Delete user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

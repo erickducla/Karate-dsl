@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1:20]","start":1768231619567,"end":1768231688273,"title":"features\/books\/books[1:20] 12:26:59.567-12:28:08.273 Create a new book","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[2:38]","start":1768231619556,"end":1768231627660,"title":"features\/books\/books[2:38] 12:26:59.556-12:27:07.660 List book by ISBN","className":"failed"},{"id":3,"group":3,"content":"features\/books\/books[3:48]","start":1768231619556,"end":1768231627662,"title":"features\/books\/books[3:48] 12:26:59.556-12:27:07.662 Update existing book","className":"failed"},{"id":4,"group":4,"content":"features\/books\/books[4:60]","start":1768231619556,"end":1768231628122,"title":"features\/books\/books[4:60] 12:26:59.556-12:27:08.122 List all books"},{"id":5,"group":5,"content":"features\/users\/generate-token[1:7]","start":1768231619556,"end":1768231626514,"title":"features\/users\/generate-token[1:7] 12:26:59.556-12:27:06.514 Create user and generate token"},{"id":6,"group":5,"content":"features\/users\/users[1.1:32]","start":1768231626516,"end":1768231629021,"title":"features\/users\/users[1.1:32] 12:27:06.516-12:27:09.021 Create Fails user","className":"failed"},{"id":7,"group":2,"content":"features\/users\/users[1.2:33]","start":1768231627679,"end":1768231629040,"title":"features\/users\/users[1.2:33] 12:27:07.679-12:27:09.040 Delete user","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

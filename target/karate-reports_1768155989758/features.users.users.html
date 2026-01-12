@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3054873d-2085-4d10-a946-039526718eb6",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.users.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-11 03:24:26 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:21]"><span>[1.1:21]</span> <span>Create user success</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.1:25]"><span>[1.1:25]</span> <span>Generate user token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:21]</span>
+                <span class="scenario-name">Create user success</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">15:24:26.527 karate.env system property was: null 
+15:24:26.593 classpath:features/users/users.feature:4
+Given url baseUrl
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">15:24:26.593 classpath:features/users/users.feature:8
+* def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">15:24:26.593 classpath:features/users/users.feature:9
+* def basePath = &#39;Account/v1&#39;
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/User&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">15:24:26.593 classpath:features/users/users.feature:11
+Given path basePath + &#39;/User&#39;
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">15:24:26.593 classpath:features/users/users.feature:12
+And request bodyRequest
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">15:24:26.593 classpath:features/users/users.feature:13
+When method post
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">15:24:26.593 classpath:features/users/users.feature:14
+Then status 201
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">15:24:26.593 classpath:features/users/users.feature:15
+And print response
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Cadastro realizado com sucesso&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">15:24:26.593 classpath:features/users/users.feature:16
+And match response.message == &quot;Cadastro realizado com sucesso&quot;
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+classpath:features/users/users.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 5000</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">15:24:26.593 classpath:features/users/users.feature:17
+And assert responseTime &lt; 5000
+&gt;&gt; classpath:features/users/users.feature:21
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+classpath:features/users/users.feature:16
+classpath:features/users/users.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:25]</span>
+                <span class="scenario-name">Generate user token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">15:24:26.527 karate.env system property was: null 
+15:24:26.593 classpath:features/users/users.feature:4
+Given url baseUrl
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">15:24:26.593 classpath:features/users/users.feature:8
+* def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">15:24:26.593 classpath:features/users/users.feature:9
+* def basePath = &#39;Account/v1&#39;
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">15:24:26.593 classpath:features/users/users.feature:11
+Given path basePath + &#39;/GenerateToken&#39;
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">15:24:26.593 classpath:features/users/users.feature:12
+And request bodyRequest
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">15:24:26.593 classpath:features/users/users.feature:13
+When method post
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">15:24:26.593 classpath:features/users/users.feature:14
+Then status 200
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">15:24:26.593 classpath:features/users/users.feature:15
+And print response
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Cadastro realizado com sucesso&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">15:24:26.593 classpath:features/users/users.feature:16
+And match response.message == &quot;Cadastro realizado com sucesso&quot;
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+classpath:features/users/users.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 5000</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">15:24:26.593 classpath:features/users/users.feature:17
+And assert responseTime &lt; 5000
+&gt;&gt; classpath:features/users/users.feature:25
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/support/config/baseUrl.yaml
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   var config = { env: env } //objeto de configuração global
+04:   var headers = { &quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } //headers fixos em todas as requests
+05:   config.baseUrl = &quot;https://bookstore.toolsqa.com/&quot;
+06: 
+07:   karate.log(&#39;karate.env system property was:&#39;, env);
+08: 
+09:   //Define ambiente padrão se não for informado o karate env
+10:   if (!env) { env = &#39;qa&#39;; }
+11: 
+12:     switch (env) {
+13: 
+14:         case &#39;qa&#39;:
+15:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+16: 
+17:             break;
+18: 
+19:         case &#39;des&#39;:
+20:             config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+21:             break;
+22: 
+23:         default:
+24:     }
+25: 
+26: 
+27:   karate.log(&#39;karate.env system property was:&#39;, env);
+28:   karate.configure(&#39;headers&#39;, headers);
+29:   karate.configure(&#39;retry&#39;, { count: 10, interval: 5000 }); //10 tentativas com invtervalo de 5 segundos
+30: 
+31:   return config;
+32: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/support/config/baseUrl.yaml
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:708)
+- &lt;js&gt;.fn(Unnamed:15)
+
+classpath:features/users/users.feature:4
+classpath:features/users/users.feature:8
+classpath:features/users/users.feature:9
+classpath:features/users/users.feature:11
+classpath:features/users/users.feature:12
+classpath:features/users/users.feature:13
+classpath:features/users/users.feature:14
+classpath:features/users/users.feature:15
+classpath:features/users/users.feature:16
+classpath:features/users/users.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

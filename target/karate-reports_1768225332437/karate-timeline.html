@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1:15]","start":1768225064231,"end":1768225070216,"title":"features\/books\/books[1:15] 10:37:44.231-10:37:50.216 Create a new book","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[2:33]","start":1768225064196,"end":1768225070184,"title":"features\/books\/books[2:33] 10:37:44.196-10:37:50.184 List book by ISBN","className":"failed"},{"id":3,"group":3,"content":"features\/books\/books[3:44]","start":1768225064199,"end":1768225070184,"title":"features\/books\/books[3:44] 10:37:44.199-10:37:50.184 update new book","className":"failed"},{"id":4,"group":4,"content":"features\/users\/generate-token[1:7]","start":1768225064221,"end":1768225068734,"title":"features\/users\/generate-token[1:7] 10:37:44.221-10:37:48.734 Create user"},{"id":5,"group":5,"content":"features\/users\/generate-token[2:19]","start":1768225064196,"end":1768225068734,"title":"features\/users\/generate-token[2:19] 10:37:44.196-10:37:48.734 Generate token"},{"id":6,"group":5,"content":"features\/users\/usersData\/delete[1.1:20]","start":1768225068751,"end":1768225070808,"title":"features\/users\/usersData\/delete[1.1:20] 10:37:48.751-10:37:50.808 Delete user","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/books[1.1:26]","start":1768168286916,"end":1768168287655,"title":"features\/books\/books[1.1:26] 18:51:26.916-18:51:27.655 List books success","className":"failed"},{"id":2,"group":2,"content":"features\/books\/books[1.1:30]","start":1768168286967,"end":1768168287657,"title":"features\/books\/books[1.1:30] 18:51:26.967-18:51:27.657 Create book","className":"failed"},{"id":3,"group":3,"content":"features\/users\/generate-token[1:8]","start":1768168286916,"end":1768168291999,"title":"features\/users\/generate-token[1:8] 18:51:26.916-18:51:31.999 Generate user token"},{"id":4,"group":4,"content":"features\/users\/users[1.1:27]","start":1768168286962,"end":1768168292299,"title":"features\/users\/users[1.1:27] 18:51:26.962-18:51:32.299 Create user success"},{"id":5,"group":5,"content":"features\/users\/users[1.1:31]","start":1768168287054,"end":1768168291999,"title":"features\/users\/users[1.1:31] 18:51:27.054-18:51:31.999 Create duplicated user","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

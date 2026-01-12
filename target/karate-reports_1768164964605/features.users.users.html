@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3054873d-2085-4d10-a946-039526718eb6",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.users.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-11 05:44:38 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:20]"><span>[1.1:20]</span> <span>Create user success</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.1:24]"><span>[1.1:24]</span> <span>Create duplicated user</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.1:28]"><span>[1.1:28]</span> <span>Generate user token</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.1:32]"><span>[1.1:32]</span> <span>Delete user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:20]</span>
+                <span class="scenario-name">Create user success</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3617</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:44:20.130 karate.env system property was: null 
+17:44:20.363 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/User&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3579</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">17:44:21.146 request:
+1 &gt; POST https://bookstore.toolsqa.com/Account/v1/User
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;erick&quot;,&quot;password&quot;:&quot;Er!ck134567&quot;}
+
+17:44:24.047 response time in milliseconds: 2900
+1 &lt; 201
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Sun, 11 Jan 2026 20:44:23 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;4f-qJwdj5J1SWJYRjb8AAPngbDpjnY&quot;
+{&quot;userID&quot;:&quot;528fbc22-7258-4f6a-9d33-7ba66cbd0f57&quot;,&quot;username&quot;:&quot;erick&quot;,&quot;books&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">17:44:24.052 [print] {
+  &quot;userID&quot;: &quot;528fbc22-7258-4f6a-9d33-7ba66cbd0f57&quot;,
+  &quot;username&quot;: &quot;erick&quot;,
+  &quot;books&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">17:44:24.055 classpath:features/users/users.feature:16
+* if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:44 Expected ; but found karate
+if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+                                            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:377)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+classpath:features/users/users.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:24]</span>
+                <span class="scenario-name">Create duplicated user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3634</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:44:20.145 karate.env system property was: null 
+17:44:20.365 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/User&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3583</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">17:44:21.146 request:
+1 &gt; POST https://bookstore.toolsqa.com/Account/v1/User
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;erick&quot;,&quot;password&quot;:&quot;Er!ck134567&quot;}
+
+17:44:24.051 response time in milliseconds: 2903
+1 &lt; 201
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Sun, 11 Jan 2026 20:44:23 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;4f-THbOzKCStqwTzdRO0wC482No8Zc&quot;
+{&quot;userID&quot;:&quot;8db65a47-5025-4321-b1e5-74116883f09a&quot;,&quot;username&quot;:&quot;erick&quot;,&quot;books&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">17:44:24.067 classpath:features/users/users.feature:14
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 2903, url: https://bookstore.toolsqa.com/Account/v1/User, response: 
+{&quot;userID&quot;:&quot;8db65a47-5025-4321-b1e5-74116883f09a&quot;,&quot;username&quot;:&quot;erick&quot;,&quot;books&quot;:[]}
+classpath:features/users/users.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:28]</span>
+                <span class="scenario-name">Generate user token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3592</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:44:20.137 karate.env system property was: null 
+17:44:20.365 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3542</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">17:44:21.146 request:
+1 &gt; POST https://bookstore.toolsqa.com/Account/v1/GenerateToken
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;erick&quot;,&quot;password&quot;:&quot;Er!ck134567&quot;}
+
+17:44:24.015 response time in milliseconds: 2868
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Sun, 11 Jan 2026 20:44:23 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 273
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;111-KofgJTxqULW4EydrV2W8Ytt1R2c&quot;
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVyaWNrIiwicGFzc3dvcmQiOiJFciFjazEzNDU2NyIsImlhdCI6MTc2ODE2NDI2Mn0.fDO1Xl4PD4dPyX4zqbCgzEvTHWxzvknlsFiwIxGWTnI&quot;,&quot;expires&quot;:&quot;2026-01-18T20:44:22.282Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">17:44:24.020 [print] {
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVyaWNrIiwicGFzc3dvcmQiOiJFciFjazEzNDU2NyIsImlhdCI6MTc2ODE2NDI2Mn0.fDO1Xl4PD4dPyX4zqbCgzEvTHWxzvknlsFiwIxGWTnI&quot;,
+  &quot;expires&quot;: &quot;2026-01-18T20:44:22.282Z&quot;,
+  &quot;status&quot;: &quot;Success&quot;,
+  &quot;result&quot;: &quot;User authorized successfully.&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">17:44:24.023 classpath:features/users/users.feature:16
+* if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:44 Expected ; but found karate
+if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+                                            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:377)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+classpath:features/users/users.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:32]</span>
+                <span class="scenario-name">Delete user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2296</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:44:24.035 karate.env system property was: null 
+17:44:24.038 karate.env system property was: qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/users/usersData/create-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath = &#39;Account/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath + &#39;/GenerateToken&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2289</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">17:44:24.066 request:
+1 &gt; POST https://bookstore.toolsqa.com/Account/v1/GenerateToken
+1 &gt; cache-control: no-cache
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: bookstore.toolsqa.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userName&quot;:&quot;erick&quot;,&quot;password&quot;:&quot;Er!ck134567&quot;}
+
+17:44:26.337 response time in milliseconds: 2269
+1 &lt; 200
+1 &lt; Server: nginx/1.17.10 (Ubuntu)
+1 &lt; Date: Sun, 11 Jan 2026 20:44:26 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 85
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;55-uDqoBYBzbvMfwcbBiE9kdrLOtHY&quot;
+{&quot;token&quot;:null,&quot;expires&quot;:null,&quot;status&quot;:&quot;Failed&quot;,&quot;result&quot;:&quot;User authorization failed.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">17:44:26.340 [print] {
+  &quot;token&quot;: null,
+  &quot;expires&quot;: null,
+  &quot;status&quot;: &quot;Failed&quot;,
+  &quot;result&quot;: &quot;User authorization failed.&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">17:44:26.342 classpath:features/users/users.feature:16
+* if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:44 Expected ; but found karate
+if (scenario == &#39;Create user success&#39;) eval karate.set(&#39;userId&#39;, response.userID)
+                                            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:377)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+classpath:features/users/users.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: features.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 89.911 s <<< FAILURE! - in features.ExamplesTest
+features.ExamplesTest.testParallel  Time elapsed: 89.829 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 504, expected: 201, response time in milliseconds: 60509, url: https://bookstore.toolsqa.com/BookStore/v1/Books, response: 
+<html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx/1.17.10 (Ubuntu)</center>
+</body>
+</html>
+
+classpath:features/books/books.feature:38
+js failed:
+>>>>
+01: isbnCreated
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "isbnCreated" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/books/books.feature:46
+js failed:
+>>>>
+01: isbnCreated
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "isbnCreated" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/books/books.feature:57
+status code was: 504, expected: 400, response time in milliseconds: 60622, url: https://bookstore.toolsqa.com/BookStore/v1/Books, response: 
+<html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx/1.17.10 (Ubuntu)</center>
+</body>
+</html>
+
+classpath:features/books/books.feature:92 ==> expected: <0> but was: <4>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at features.ExamplesTest.testParallel(ExamplesTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

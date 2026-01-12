@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.089 s <<< FAILURE! - in examples.ExamplesTest
+examples.ExamplesTest.testParallel  Time elapsed: 31.938 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 21667 milliseconds for url: https://bookstore.demoqa.com/Account/v1/User
+org.apache.http.conn.HttpHostConnectException: Connect to bookstore.demoqa.com:443 [bookstore.demoqa.com/176.58.101.124] failed: Connection timed out: getsockopt
+classpath:examples/users/users.feature:8 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
